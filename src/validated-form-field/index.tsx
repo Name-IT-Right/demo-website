@@ -1,4 +1,4 @@
-import { Alert, FormField, FormFieldProps, SpaceBetween } from "@cloudscape-design/components"
+import { FormField, FormFieldProps, SpaceBetween, StatusIndicator } from "@cloudscape-design/components"
 import { Rule, Validation } from "@name-it-right/types"
 
 type NameItRight = {
@@ -29,9 +29,14 @@ export const ValidatedFormField = (props: ValidatedFormFieldProps) => {
   const warning = warningMessages.map((text, i) => <span key={i}>{text}<br /></span>);
   const warningText = warningMessages.length ? warning : '';
 
+  props = {
+    ...props,
+    children: <>{props.children}{warningText && <StatusIndicator type="info">{warningText}</StatusIndicator>}</>
+  }
+
   return (
     <SpaceBetween size="xxs">
-      {warningText && <Alert statusIconAriaLabel="Info">{warningText}</Alert>}
+      {/* {warningText && <Alert statusIconAriaLabel="Info">{warningText}</Alert>} */}
       <FormField
         errorText={errorText}
         {...props}
