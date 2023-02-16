@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/piotrekwitkowski/name-it-right-components.git"
+    "url": "git+https://github.com/Name-It-Right/website.git"
   },
   "author": "Piotrek Witkowski",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/piotrekwitkowski/name-it-right-components/issues"
+    "url": "https://github.com/Name-It-Right/website/issues"
   },
-  "homepage": "https://github.com/piotrekwitkowski/name-it-right-components#readme",
+  "homepage": "https://github.com/Name-It-Right/website#readme",
   "dependencies": {
     "@cloudscape-design/components": "^3.0.196",
     "@cloudscape-design/global-styles": "^1.0.7",
