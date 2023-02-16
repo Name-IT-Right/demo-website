@@ -24,6 +24,7 @@ export const App = () => {
         utilities={[
           { text: "Rules Explorer", type: "button" },
           { text: "S3 Demo", type: "button" },
+          { text: "Sources", type: 'button', href:'https://github.com/Name-IT-Right/', external: true },
         ]}
       />
       <AppLayout
