@@ -22,7 +22,7 @@ export const ValidatedFormField = (props: ValidatedFormFieldProps) => {
   };
 
   const errorMessages = rules.errors.reduce(getMatches(input), []);
-  const error = errorMessages.map((text, i) => <span key={i}>{text}<br/></span>);
+  const error = errorMessages.map((text, i) => <span key={i}>{text}<br /></span>);
   const errorText = enabled && errorMessages.length ? error : '';
 
   const warningMessages = rules.warnings.reduce(getMatches(input), []);
