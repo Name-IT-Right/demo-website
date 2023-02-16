@@ -1,7 +1,7 @@
-import { Button, Form, Header, Input, SpaceBetween } from "@cloudscape-design/components"
+import { Button, Form, Header, Input, Link, SpaceBetween, TextContent } from "@cloudscape-design/components"
 import { BaseChangeDetail } from "@cloudscape-design/components/input/interfaces"
 import { NonCancelableEventHandler } from "@cloudscape-design/components/internal/events"
-import { validationsSafe as v } from "@name-it-right/db"
+import { validationsSafe as validations } from "@name-it-right/db"
 import { useState } from "react"
 import { ValidatedFormField } from "../validated-form-field"
 
@@ -23,17 +23,17 @@ export const DemoForm = () => {
       }
     >
       <ValidatedFormField
-        // Cloudscape properties of a FormField
-        // https://cloudscape.design/components/form-field/
         label="Bucket name"
-        constraintText="Bucket name must be globally unique and must not contain spaces or uppercase letters."
-        
-        // Name IT Right
+        constraintText={
+          <>
+            Bucket name must be globally unique and must not contain spaces or uppercase letters.{" "}
+            <Link external fontSize="body-s" href="https://docs.aws.amazon.com/console/s3/bucket-naming">See rules for bucket naming</Link>
+          </>
+        }
         nameItRight={{
           enabled: submitClicked,
           input: inputValue,
-          rules: v.S3.Bucket.BucketName,
-          showWarnings: true
+          rules: validations.S3.Bucket.BucketName,
         }}
       >
         <Input
