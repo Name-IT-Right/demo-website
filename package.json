@@ -19,6 +19,7 @@
   "homepage": "https://github.com/piotrekwitkowski/name-it-right-components#readme",
   "dependencies": {
     "@cloudscape-design/components": "^3.0.196",
+    "@cloudscape-design/global-styles": "^1.0.7",
     "@name-it-right/db": "^3.0.1",
     "@vitejs/plugin-react-swc": "^3.1.0",
     "react": "^18.2.0",
