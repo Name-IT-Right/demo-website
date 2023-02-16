@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Name-It-Right/website.git"
+    "url": "git+https://github.com/Name-It-Right/demo-website.git"
   },
   "author": "Piotrek Witkowski",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Name-It-Right/website/issues"
+    "url": "https://github.com/Name-It-Right/demo-website/issues"
   },
-  "homepage": "https://github.com/Name-It-Right/website#readme",
+  "homepage": "https://github.com/Name-It-Right/demo-website#readme",
   "dependencies": {
     "@cloudscape-design/components": "^3.0.196",
     "@cloudscape-design/global-styles": "^1.0.7",
