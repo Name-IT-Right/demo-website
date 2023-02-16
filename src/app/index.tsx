@@ -19,7 +19,7 @@ export const App = () => {
   return (
     <>
       <TopNavigation
-        identity={{ title: 'Name IT Right', href: '#', }}
+        identity={{ title: 'Name IT Right', href: '#', logo: {src: './logo.png'} }}
         i18nStrings={i18nStrings}
         utilities={[
           { text: "Rules Explorer", type: "button" },
