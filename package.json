@@ -1,11 +1,12 @@
 {
-  "name": "@name-it-right/components",
+  "name": "@name-it-right/website",
   "version": "1.0.0",
   "type": "module",
-  "description": "",
+  "description": "Demos for Name IT Right",
   "main": "dist/index.js",
   "scripts": {
-    "start": "vite"
+    "start": "vite",
+    "build": "tsc && vite build"
   },
   "repository": {
     "type": "git",
