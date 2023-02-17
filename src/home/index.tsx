@@ -61,13 +61,14 @@ export const Content = () => {
           </TextContent>
         </Container>
 
-        {/* <Container header={<Header>Validating names in CloudFormation templates</Header>}>
+        <Container header={<Header>Validating names in CloudFormation templates</Header>}>
           <TextContent>
             <p>
-              You can donwload our Visual Studio Code extension here: <Link href="/s3"><b>S3 Demo</b></Link>, please see how potential incompatibilities
+              You can donwload the Name IT Right linter for VS Code on{" "}
+              <Link href="https://marketplace.visualstudio.com/items?itemName=name-it-right.name-it-right-vsc-extension" external><b>Visual Studio Marketplace</b></Link>.
             </p>
           </TextContent>
-        </Container> */}
+        </Container>
       </SpaceBetween>
     </ContentLayout>
   )
