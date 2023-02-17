@@ -31,7 +31,6 @@ const Content = () => {
         <Header
           variant='h1'
           description={<>Buckets are containers for data stored in S3.{" "}<Link external href="https://docs.aws.amazon.com/console/s3/usings3bucket">Learn more</Link></>}
-          info={<Link>Info</Link>}
         >
           Create Bucket
         </Header>
