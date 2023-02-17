@@ -46,22 +46,28 @@ export const Content = () => {
         <Container header={<Header>UI Demos</Header>}>
           <TextContent>
             <p>
-              Please see our demos that are using Name IT Right rules. 
+              Please see our demos that are using Name IT Right rules.
             </p>
             <p>
               In the <Link href="/s3"><b>S3 Demo</b></Link>, please see how potential incompatibilities
               between services can be displayed to users in an inobtrusive way, while they are creating their resources.
             </p>
-            {/* <p>
+            <p>
               In the <Link href="/sagemaker"><b>Sagemaker Demo</b></Link>, you can see how our
               granular rule approach gives users specific errors. Designed to be read by humans,
               with Name IT Right it will always be clear what is wrong with the input about the invalid input,
-              instead of just stating <code>Member must satisfy regular expression pattern</code>.
-            </p> */}
+              instead of just stating <i>"Member must satisfy regular expression pattern"</i>.
+            </p>
           </TextContent>
         </Container>
 
-        {/* <Container header={<Header>VS Code Extension</Header>} /> */}
+        {/* <Container header={<Header>Validating names in CloudFormation templates</Header>}>
+          <TextContent>
+            <p>
+              You can donwload our Visual Studio Code extension here: <Link href="/s3"><b>S3 Demo</b></Link>, please see how potential incompatibilities
+            </p>
+          </TextContent>
+        </Container> */}
       </SpaceBetween>
     </ContentLayout>
   )

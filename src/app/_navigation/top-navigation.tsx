@@ -33,7 +33,7 @@ export const Navigation = () => {
       utilities={[
         // { text: 'Rules Explorer', type: 'button' },
         { text: 'S3 Demo', type: 'button', href: '/s3' },
-        // { text: 'Sagemaker Demo', type: 'button', href: '/sagemaker' },
+        { text: 'Sagemaker Demo', type: 'button', href: '/sagemaker' },
         { text: 'Sources', type: 'button', href: 'https://github.com/Name-IT-Right/', external: true },
       ]}
     />
