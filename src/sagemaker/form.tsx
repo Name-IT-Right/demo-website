@@ -1,4 +1,4 @@
-import { Button, Container, Form, FormField, Header, Input, SpaceBetween } from "@cloudscape-design/components";
+import { Button, Container, Form, Header, Input, SpaceBetween } from "@cloudscape-design/components";
 import { BaseChangeDetail } from "@cloudscape-design/components/input/interfaces";
 import { NonCancelableEventHandler } from "@cloudscape-design/components/internal/events";
 import { ValidatedFormField } from "@name-it-right/components";
@@ -26,22 +26,21 @@ export const CreateNotebookForm = () => {
         <Header variant='h2'>Notebook instance settings</Header>
       }
     >
-      {/* <ValidatedFormField */}
-      <FormField
+      <ValidatedFormField
         label="Notebook instance name"
         constraintText="Maximum of 63 alphanumeric characters. Can include hyphens (-), but not spaces. Must be unique within your account in an AWS Region."
-        // nameItRight={{
-        //   enabled: submitClicked,
-        //   input: inputValue,
-        //   rules: validations.SageMaker.NotebookInstance.Name,
-        // }}
+        nameItRight={{
+          enabled: submitClicked,
+          input: inputValue,
+          rules: validations.SageMaker.NotebookInstance.NotebookInstanceName,
+        }}
       >
         <Input
           value={inputValue}
           onChange={handleOnChange}
           placeholder='myawsbucket'
         />
-      </FormField>
+      </ValidatedFormField>
     </Container>
   </Form>
   )
