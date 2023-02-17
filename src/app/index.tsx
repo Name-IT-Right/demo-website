@@ -7,9 +7,7 @@ const router = createBrowserRouter([
   { path: "/", element: <Home /> },
   { path: "/s3", element: <S3Demo /> },
   { path: "/sagemaker", element: <SagemakerDemo /> },
-],
-  { basename: '/demo-website' }
-);
+]);
 
 export const App = () => {
   return (
