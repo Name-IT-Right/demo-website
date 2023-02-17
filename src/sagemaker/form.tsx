@@ -38,7 +38,6 @@ export const CreateNotebookForm = () => {
         <Input
           value={inputValue}
           onChange={handleOnChange}
-          placeholder='myawsbucket'
         />
       </ValidatedFormField>
     </Container>
