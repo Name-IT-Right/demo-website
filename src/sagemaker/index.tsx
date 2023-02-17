@@ -38,7 +38,7 @@ const Content = () => {
     >
       <SpaceBetween size="l">
         <Alert>
-          The purpose of this demo is to show benefits of input validation implemented in a consistent manner across multiple products and technologies.<br />
+          This demo shows benefits of input validation implemented in a consistent manner across multiple products and technologies.<br />
           Designed to be read by humans, with Name IT Right it will always be exactly clear why the provided input value is invalid.
         </Alert>
         <CreateNotebookForm />
