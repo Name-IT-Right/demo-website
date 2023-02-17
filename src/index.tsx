@@ -1,7 +1,7 @@
 import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client'
+import { createRoot } from 'react-dom/client';
 import { App } from './app';
-import "@cloudscape-design/global-styles/index.css"
+import "@cloudscape-design/global-styles/index.css";
 
 createRoot(document.getElementById('root') as HTMLElement).render(
   <StrictMode>

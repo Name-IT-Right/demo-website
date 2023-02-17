@@ -1,9 +1,9 @@
-import { Button, Container, Form, Header, Input, Link, SpaceBetween } from "@cloudscape-design/components"
-import { BaseChangeDetail } from "@cloudscape-design/components/input/interfaces"
-import { NonCancelableEventHandler } from "@cloudscape-design/components/internal/events"
-import { ValidatedFormField } from "@name-it-right/components"
-import { validationsSafe as validations } from "@name-it-right/db"
-import { useState } from "react"
+import { Button, Container, Form, Header, Input, Link, SpaceBetween } from "@cloudscape-design/components";
+import { BaseChangeDetail } from "@cloudscape-design/components/input/interfaces";
+import { NonCancelableEventHandler } from "@cloudscape-design/components/internal/events";
+import { ValidatedFormField } from "@name-it-right/components";
+import { validationsSafe as validations } from "@name-it-right/db";
+import { useState } from "react";
 
 export const CreateBucketForm = () => {
   const [submitClicked, setSubmitClicked] = useState(false);
