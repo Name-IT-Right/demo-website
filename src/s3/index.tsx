@@ -1,22 +1,26 @@
 import { Alert, AppLayout, ContentLayout, Header, Link, SpaceBetween } from "@cloudscape-design/components";
-import { Breadcrumbs } from "../app/breadcrumbs";
+import { Breadcrumbs } from "../app/_navigation/breadcrumbs";
+import { Navigation } from "../app/_navigation/top-navigation";
 import { CreateBucketForm } from "./form";
 
 const breadcrumbsItems = [
-  { text: 'Amazon S3', href: '#' },
-  { text: 'Buckets', href: '#' },
-  { text: 'Create bucket', href: '#' }
+  { text: 'Amazon S3', href: '' },
+  { text: 'Buckets', href: '' },
+  { text: 'Create bucket', href: '' }
 ];
 
 export const S3Demo = () => {
   return (
-    <AppLayout
-      breadcrumbs={<Breadcrumbs items={breadcrumbsItems} />}
-      content={<Content />}
-      contentType='form'
-      navigationHide={true}
-      toolsHide={true}
-    />
+    <>
+      <Navigation />
+      <AppLayout
+        breadcrumbs={<Breadcrumbs items={breadcrumbsItems} />}
+        content={<Content />}
+        contentType='form'
+        navigationHide={true}
+        toolsHide={true}
+      />
+    </>
   )
 }
 
