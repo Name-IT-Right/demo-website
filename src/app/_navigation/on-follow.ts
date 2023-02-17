@@ -13,7 +13,6 @@ import { NavigateFunction } from "react-router-dom";
 export const onFollow = (navigate: NavigateFunction) => (e: CustomEvent<BaseNavigationDetail | any>) => {
   // use navigation without page reload for internal links and if href is actually specified
   if (!e.detail.external && e.detail.href) {
-    console.log()
     e.preventDefault();
     navigate(e.detail.href);
   }
