@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react-swc";
 export default defineConfig(({ command }) => ({
   plugins: [react()],
   // change base for Github Pages hosting on production builds
-  base: '/demo-website/',
+  base: '/demo-website',
   // test: {
   //   globals: true,
   //   environment: 'jsdom',
